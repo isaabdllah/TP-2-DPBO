@@ -8,3 +8,29 @@ Abu-Abu
 Anjing
 L
 WinterDog
+
+---
+
+8
+Sweater Hangat
+300000
+2
+Sweater
+Cotton
+Merah
+Kucing
+M
+CozyCat
+
+---
+
+9
+Hoodie Outdoor
+500000
+5
+Hoodie
+Polyester
+Hitam
+Anjing
+XL
+ToughPup
