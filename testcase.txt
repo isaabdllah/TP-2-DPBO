@@ -9,7 +9,6 @@ Anjing
 L
 WinterDog
 
----
 
 8
 Sweater Hangat
@@ -22,7 +21,6 @@ Kucing
 M
 CozyCat
 
----
 
 9
 Hoodie Outdoor
