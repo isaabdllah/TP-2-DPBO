@@ -1,56 +1,76 @@
-# TP-2-DPBO
-
-# README - Program PetShop
+# Tugas Praktikum 2 DPBO
 
 ## Janji
-Saya Muhammad Isa Abdullah dengan NIM 2303508 mengerjakan Latihan Modul 1 dalam mata kuliah Desain dan Pemrograman Berorientasi Objek untuk keberkahanNya maka saya tidak melakukan kecurangan seperti yang telah dispesifikasikan. Aamiin.
+Saya Muhammad Isa Abdullah dengan NIM 2303508 mengerjakan Tugas Praktikum 2 dalam mata kuliah Desain dan Pemrograman Berorientasi Objek untuk keberkahanNya maka saya tidak melakukan kecurangan seperti yang telah dispesifikasikan. Aamiin.
 
-## Atribut dan Methods
-1. Kelas Petshop
-Deskripsi:
-Kelas utama yang merepresentasikan produk yang dijual di petshop.
+---
 
-🔹 Atribut
-id (int) → ID unik untuk produk.
-nama_produk (string) → Nama produk.
-hargaProduk (float) → Harga produk dalam mata uang tertentu.
-stokProduk (int) → Jumlah stok produk yang tersedia.
-🔹 Methods
-get_id() → Mengembalikan ID produk.
-set_id(id) → Mengatur ID produk.
-get_nama_produk() → Mengembalikan nama produk.
-set_nama_produk(nama_produk) → Mengatur nama produk.
-get_hargaProduk() → Mengembalikan harga produk.
-set_hargaProduk(hargaProduk) → Mengatur harga produk.
-get_stokProduk() → Mengembalikan jumlah stok produk.
-set_stokProduk(stokProduk) → Mengatur jumlah stok produk.
-2️. Kelas Aksesoris (Turunan dari Petshop)
-Deskripsi:
-Kelas yang merepresentasikan produk aksesoris di petshop.
+## Penjelasan Atribut dan Methods
 
-🔹 Atribut
-jenis (string) → Jenis aksesoris (misalnya: kalung, mainan, dll.).
-bahan (string) → Bahan utama aksesoris (misalnya: plastik, kain, logam).
-warna (string) → Warna aksesoris.
-🔹 Methods
-get_jenis() → Mengembalikan jenis aksesoris.
-set_jenis(jenis) → Mengatur jenis aksesoris.
-get_bahan() → Mengembalikan bahan aksesoris.
-set_bahan(bahan) → Mengatur bahan aksesoris.
-get_warna() → Mengembalikan warna aksesoris.
-set_warna(warna) → Mengatur warna aksesoris.
-3️. Kelas Baju_cpp (Turunan dari Aksesoris)
-Deskripsi:
-Kelas yang merepresentasikan produk baju untuk hewan di petshop.
+### Kelas `PetShop`
+Kelas ini merepresentasikan produk yang dijual di toko hewan peliharaan.
 
-🔹 Atribut
-untuk (string) → Jenis hewan yang bisa memakai baju (misalnya: anjing, kucing).
-size (string) → Ukuran baju (misalnya: S, M, L).
-warna (string) → Warna baju (meng-overwrite warna dari kelas Aksesoris).
-🔹 Methods
-get_untuk() → Mengembalikan jenis hewan yang dapat memakai baju.
-set_untuk(untuk) → Mengatur jenis hewan yang dapat memakai baju.
-get_size() → Mengembalikan ukuran baju.
-set_size(size) → Mengatur ukuran baju.
-get_warna() → Mengembalikan warna baju.
-set_warna(warna) → Mengatur warna baju.
+**Atribut:**
+- `id` (int): ID unik untuk setiap produk.
+- `namaProduk` (string): Nama dari produk.
+- `hargaProduk` (int): Harga produk.
+- `stokProduk` (int): Jumlah stok produk.
+
+**Methods:**
+- Getter dan Setter untuk setiap atribut.
+- `get_id()`: Mengembalikan ID produk.
+- `get_namaProduk()`: Mengembalikan nama produk.
+- `get_hargaProduk()`: Mengembalikan harga produk.
+- `get_stokProduk()`: Mengembalikan jumlah stok produk.
+
+---
+
+### Kelas `Aksesoris` (turunan dari `PetShop`)
+Kelas ini merupakan subclass dari `PetShop` yang merepresentasikan produk aksesoris.
+
+**Atribut:**
+- `jenis` (string): Jenis aksesoris.
+- `bahan` (string): Bahan pembuat aksesoris.
+- `warna` (string): Warna aksesoris.
+
+**Methods:**
+- Getter dan Setter untuk atribut tambahan.
+- `get_jenis()`: Mengembalikan jenis aksesoris.
+- `get_bahan()`: Mengembalikan bahan aksesoris.
+- `get_warna()`: Mengembalikan warna aksesoris.
+
+---
+
+### Kelas `Baju` (turunan dari `Aksesoris`)
+Kelas ini merupakan subclass dari `Aksesoris` yang merepresentasikan produk baju untuk hewan peliharaan.
+
+**Atribut:**
+- `untuk` (string): Target pemakaian baju (misalnya kucing atau anjing).
+- `size` (string): Ukuran baju.
+- `merek` (string): Merek baju.
+
+**Methods:**
+- Getter dan Setter untuk atribut tambahan.
+- `get_untuk()`: Mengembalikan target pemakaian baju.
+- `get_size()`: Mengembalikan ukuran baju.
+- `get_merek()`: Mengembalikan merek baju.
+
+---
+
+## Alur Program
+
+### 1. Menampilkan Data Baju
+- Program menampilkan daftar baju yang tersedia di PetShop dalam bentuk tabel.
+- Jika tidak ada data, program akan menampilkan pesan bahwa data kosong.
+
+### 2. Menambah Data Baju
+- Pengguna dapat menambahkan produk baju baru dengan menginput ID, nama, harga, stok, jenis, bahan, warna, target pemakaian, ukuran, dan merek.
+- Data yang valid akan disimpan dalam daftar baju.
+- Jika input tidak valid (misalnya ID atau harga bukan angka), program akan menampilkan pesan kesalahan.
+
+### 3. Keluar dari Program
+- Pengguna dapat memilih opsi keluar dari program.
+- Program akan berhenti setelah menampilkan pesan penutupan.
+
+---
+
