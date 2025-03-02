@@ -1,10 +1,11 @@
 from Petshop import Petshop
 
 class Aksesoris(Petshop):
-    def __init__(this):
-        this.jenis = ""
-        this.bahan = ""
-        this.warna = ""
+    def __init__(this, id, nama_produk, harga_produk, stok_produk, jenis, bahan, warna):
+        super().__init__(id, nama_produk, harga_produk, stok_produk)
+        this.jenis = jenis
+        this.bahan = bahan
+        this.warna = warna
         
     # Setter & Getter
     def get_jenis(this):

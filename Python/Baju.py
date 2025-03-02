@@ -1,10 +1,11 @@
 from Aksesoris import Aksesoris
 
 class Baju(Aksesoris):
-    def __init__(this):
-        this.untuk = ""
-        this.size = ""
-        this.merek = ""
+    def __init__(this, id=0, nama_produk="", harga_produk=0, stok_produk=0, jenis="", bahan="", warna="", untuk="", size="", merek=""):
+        super().__init__(id, nama_produk, harga_produk, stok_produk, jenis, bahan, warna) 
+        this.untuk = untuk
+        this.size = size
+        this.merek = merek
         
     # Setter & Getter
     def get_untuk(this):

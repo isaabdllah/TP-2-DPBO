@@ -1,9 +1,9 @@
 class Petshop:
-    def __init__(this):
-        this.id = 0
-        this.namaProduk = ""
-        this.hargaProduk = 0
-        this.stokProduk = 0
+    def __init__(this, id=0, namaProduk="", hargaProduk=0, stokProduk=0):
+        this.id = id
+        this.namaProduk = namaProduk
+        this.hargaProduk = hargaProduk
+        this.stokProduk = stokProduk
         
     # Setter & Getter
     def get_id(this):
