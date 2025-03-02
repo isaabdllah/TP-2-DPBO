@@ -1,0 +1,10 @@
+7
+Jaket Musim Dingin
+450000
+4
+Jaket
+Wool
+Abu-Abu
+Anjing
+L
+WinterDog
